@@ -1,0 +1,13 @@
+  body{
+            background:linear-gradient(0deg, #39a839 0%, #1eabce 100%)
+        }
+        #clock{
+            font-size:50px;
+            background-color: skyblue;
+            text-align: center;
+            padding:5px;
+            margin:280px 400px;
+            border-radius: 20px;
+            border:solid 2px black;
+        }
+        
