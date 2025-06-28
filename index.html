@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digital Clock</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Modern Digital Clock</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div id="clock"></div>
-</body>
-<script>
-     setInterval(time, 1);
- function time(){
- const date=new Date();
- 
- let currentTime=date.getHours()+":"+date.getMinutes()+":"+date.getSeconds();
+  <div id="clock">00:00:00</div>
 
- document.getElementById('clock').innerHTML=currentTime;
- }
- time();
-</script>
+  <script>
+    function updateClock() {
+      const date = new Date();
+      let hours = String(date.getHours()).padStart(2, '0');
+      let minutes = String(date.getMinutes()).padStart(2, '0');
+      let seconds = String(date.getSeconds()).padStart(2, '0');
+      const currentTime = `${hours}:${minutes}:${seconds}`;
+      document.getElementById('clock').textContent = currentTime;
+    }
+
+    setInterval(updateClock, 1000);
+    updateClock();
+  </script>
+</body>
 </html>
