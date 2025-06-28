@@ -1,13 +1,28 @@
-  body{
-            background:linear-gradient(0deg, #39a839 0%, #1eabce 100%)
-        }
-        #clock{
-            font-size:50px;
-            background-color: skyblue;
-            text-align: center;
-            padding:5px;
-            margin:280px 400px;
-            border-radius: 20px;
-            border:solid 2px black;
-        }
-        
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#clock {
+  font-size: 4rem;
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  padding: 30px 60px;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+  font-family: 'Courier New', Courier, monospace;
+  letter-spacing: 3px;
+}
